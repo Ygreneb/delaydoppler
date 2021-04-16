@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vstgui-ui-description version="1">
+	<fonts>
+		<font alternative-font-names="Arial" bold="true" font-name="DejaVu Sans Mono" name="DejaVu Sans Mono" size="15"/>
+	</fonts>
+	<colors>
+		<color name="DarkGrey" rgba="#7a7a7aff"/>
+		<color name="Green" rgba="#1fe239ff"/>
+		<color name="LightGrey" rgba="#bdbdbdff"/>
+	</colors>
+	<template background-color="~ BlackCColor" background-color-draw-style="filled and stroked" bitmap="BG" class="CViewContainer" mouse-enabled="true" name="view" opacity="1" origin="0, 0" size="593, 424" transparent="false" wants-focus="true">
+		<view background-color="~ TransparentCColor" background-color-draw-style="filled and stroked" class="CViewContainer" mouse-enabled="true" opacity="1" origin="0, 0" size="400, 450" sub-controller="PathController" transparent="false" wants-focus="false">
+			<view class="PathEdit" control-tag="PathEdit" default-value="0.5" emitter-bitmap="Emitter" max-value="1" min-value="0" mouse-enabled="true" opacity="1" origin="25, 34" path-color="LightGrey" point-color="Green" size="361, 359" transparent="false" wants-focus="false" wheel-inc-value="0.1"/>
+			<view bitmap="Btn_Add" class="CKickButton" control-tag="AddPoint" default-value="0" height-of-one-image="23" max-value="1" min-value="0" mouse-enabled="true" opacity="1" origin="330, 391" size="23, 23" sub-pixmaps="0" transparent="false" wants-focus="true" wheel-inc-value="0.1"/>
+			<view bitmap="Btn_Remove" class="CKickButton" control-tag="RemovePoint" default-value="0" height-of-one-image="23" max-value="1" min-value="0" mouse-enabled="true" opacity="1" origin="358, 391" size="23, 23" sub-pixmaps="0" transparent="false" wants-focus="true" wheel-inc-value="0.1"/>
+		</view>
+		<view angle-range="270" angle-start="135" bitmap="Knob_135_271" class="CAnimKnob" control-tag="Dist" default-value="0.0581162" height-of-one-image="46" inverse-bitmap="false" max-value="1" min-value="0" mouse-enabled="true" opacity="1" origin="415, 56" size="46, 46" sub-pixmaps="271" transparent="false" value-inset="0" wants-focus="false" wheel-inc-value="0.1" zoom-factor="1"/>
+		<view back-color="~ TransparentCColor" background-offset="0, 0" class="CTextEdit" control-tag="Dist" default-value="0.0581162" font="DejaVu Sans Mono" font-antialias="true" font-color="LightGrey" frame-color="~ WhiteCColor" frame-width="1" immediate-text-change="false" max-value="1" min-value="0" mouse-enabled="true" opacity="1" origin="407, 113" round-rect-radius="6" secure-style="false" shadow-color="~ RedCColor" size="52, 16" style-3D-in="false" style-3D-out="false" style-doubleclick="false" style-no-draw="false" style-no-frame="true" style-no-text="false" style-round-rect="false" style-shadow-text="false" text-alignment="right" text-inset="0, 0" text-rotation="0" text-shadow-offset="1, 1" title="1.0" transparent="false" value-precision="1" wants-focus="true" wheel-inc-value="0.1"/>
+		<view angle-range="270" angle-start="135" bitmap="Knob_135_271" class="CAnimKnob" control-tag="Duration" default-value="0.249625" height-of-one-image="46" inverse-bitmap="false" max-value="1" min-value="0" mouse-enabled="true" opacity="1" origin="516, 56" size="46, 46" sub-pixmaps="271" transparent="false" value-inset="0" wants-focus="false" wheel-inc-value="0.1" zoom-factor="1"/>
+		<view back-color="~ TransparentCColor" background-offset="0, 0" class="CTextEdit" control-tag="Duration" default-value="0.249625" font="DejaVu Sans Mono" font-antialias="true" font-color="LightGrey" frame-color="~ WhiteCColor" frame-width="1" immediate-text-change="false" max-value="1" min-value="0" mouse-enabled="true" opacity="1" origin="508, 113" round-rect-radius="6" secure-style="false" shadow-color="~ RedCColor" size="52, 16" style-3D-in="false" style-3D-out="false" style-doubleclick="false" style-no-draw="false" style-no-frame="true" style-no-text="false" style-round-rect="false" style-shadow-text="false" text-alignment="right" text-inset="0, 0" text-rotation="0" text-shadow-offset="1, 1" title="10.2" transparent="false" value-precision="0" wants-focus="true" wheel-inc-value="0.1"/>
+		<view bitmap="Slider_BG" bitmap-offset="-10, -10" class="CSlider" control-tag="SpeedOfSound" default-value="1" draw-back="false" draw-back-color="~ BlackCColor" draw-frame="false" draw-frame-color="~ GreyCColor" draw-value="false" draw-value-color="~ WhiteCColor" draw-value-from-center="false" draw-value-inverted="false" frame-width="1" handle-bitmap="Slider_Handle" handle-offset="0, 1" max-value="1" min-value="0" mode="use global" mouse-enabled="true" opacity="1" orientation="horizontal" origin="411, 153" reverse-orientation="false" size="156, 23" transparent="false" wants-focus="true" wheel-inc-value="0.1" zoom-factor="10"/>
+		<view back-color="~ TransparentCColor" background-offset="0, 0" class="CTextEdit" control-tag="SpeedOfSound" default-value="1" font="DejaVu Sans Mono" font-antialias="true" font-color="LightGrey" frame-color="~ WhiteCColor" frame-width="1" immediate-text-change="false" max-value="1" min-value="0" mouse-enabled="true" opacity="1" origin="481, 182" round-rect-radius="6" secure-style="false" shadow-color="~ RedCColor" size="61, 16" style-3D-in="false" style-3D-out="false" style-doubleclick="false" style-no-draw="false" style-no-frame="true" style-no-text="false" style-round-rect="false" style-shadow-text="false" text-alignment="right" text-inset="0, 0" text-rotation="0" text-shadow-offset="1, 1" title="105.5" transparent="false" truncate-mode="tail" value-precision="0" wants-focus="true" wheel-inc-value="0.1"/>
+		<view angle-range="270" angle-start="135" bitmap="Knob_135_271" class="CAnimKnob" control-tag="AttenMix" default-value="1" height-of-one-image="46" inverse-bitmap="false" max-value="1" min-value="0" mouse-enabled="true" opacity="1" origin="415, 224" size="46, 46" sub-pixmaps="271" transparent="false" value-inset="0" wants-focus="false" wheel-inc-value="0.1" zoom-factor="1"/>
+		<view back-color="~ TransparentCColor" background-offset="0, 0" class="CTextEdit" control-tag="AttenMix" default-value="1" font="DejaVu Sans Mono" font-antialias="true" font-color="LightGrey" frame-color="~ WhiteCColor" frame-width="1" immediate-text-change="false" max-value="1" min-value="0" mouse-enabled="true" opacity="1" origin="407, 281" round-rect-radius="6" secure-style="false" shadow-color="~ RedCColor" size="63, 16" style-3D-in="false" style-3D-out="false" style-doubleclick="false" style-no-draw="false" style-no-frame="true" style-no-text="false" style-round-rect="false" style-shadow-text="false" text-alignment="right" text-inset="0, 0" text-rotation="0" text-shadow-offset="1, 1" title="0.56" transparent="false" value-precision="0" wants-focus="true" wheel-inc-value="0.1"/>
+		<view angle-range="270" angle-start="135" bitmap="Knob_135_271" class="CAnimKnob" control-tag="Gain" default-value="0.5" height-of-one-image="46" inverse-bitmap="false" max-value="1" min-value="0" mouse-enabled="true" opacity="1" origin="516, 224" size="46, 46" sub-pixmaps="271" transparent="false" value-inset="0" wants-focus="false" wheel-inc-value="0.1" zoom-factor="1"/>
+		<view back-color="~ TransparentCColor" background-offset="0, 0" class="CTextEdit" control-tag="Gain" default-value="0.5" font="DejaVu Sans Mono" font-antialias="true" font-color="LightGrey" frame-color="~ WhiteCColor" frame-width="1" immediate-text-change="false" max-value="1" min-value="0" mouse-enabled="true" opacity="1" origin="508, 281" round-rect-radius="6" secure-style="false" shadow-color="~ RedCColor" size="43, 16" style-3D-in="false" style-3D-out="false" style-doubleclick="false" style-no-draw="false" style-no-frame="true" style-no-text="false" style-round-rect="false" style-shadow-text="false" text-alignment="right" text-inset="0, 0" text-rotation="0" text-shadow-offset="1, 1" title="0.0" transparent="false" value-precision="0" wants-focus="true" wheel-inc-value="0.1"/>
+		<view ThresholdKnob="Knob_Extra_135" angle-range="270" angle-start="135" bitmap="Knob_135_271" class="ThresholdKnob" control-tag="Threshold" default-value="0.5" height-of-one-image="46" inverse-bitmap="false" max-value="1" min-value="0" mouse-enabled="true" opacity="1" origin="415, 325" size="46, 46" sub-pixmaps="271" transparent="false" value-inset="0" wants-focus="false" wheel-inc-value="0.1" zoom-factor="1"/>
+		<view back-color="~ TransparentCColor" background-offset="0, 0" class="CParamDisplay" control-tag="Threshold" default-value="0.5" font="DejaVu Sans Mono" font-antialias="true" font-color="LightGrey" frame-color="~ BlackCColor" frame-width="1" max-value="1" min-value="0" mouse-enabled="true" opacity="1" origin="407, 383" round-rect-radius="6" shadow-color="~ RedCColor" size="63, 16" style-3D-in="false" style-3D-out="false" style-no-draw="false" style-no-frame="true" style-no-text="false" style-round-rect="false" style-shadow-text="false" text-alignment="right" text-inset="0, 0" text-rotation="0" text-shadow-offset="1, 1" transparent="false" value-precision="2" wants-focus="false" wheel-inc-value="0.1"/>
+		<view bitmap="OnOff" class="COnOffButton" control-tag="Loop" default-value="0" max-value="1" min-value="0" mouse-enabled="true" opacity="1" origin="525, 334" size="29, 29" transparent="false" wants-focus="true" wheel-inc-value="0.1"/>
+	</template>
+	<custom>
+		<attributes name="FocusDrawing"/>
+		<attributes Path="C:\Users\Benjamin\VST_SDK_3_7_0\my_plugins\delaydoppler\resource\plug.uidesc" name="VST3Editor"/>
+		<attributes Grids="1x 1,5x 5,10x 10,12x 12,15x 15" Size="1, 1" name="UIGridController"/>
+		<attributes SelectedTemplate="view" name="UITemplateController"/>
+		<attributes EditViewScale="1" EditorSize="0, 0, 1621, 865" SplitViewSize_0_0="0.6305125148986888694579988623445387929678" SplitViewSize_0_1="0.3456495828367103784195535354228923097253" SplitViewSize_1_0="0.5256257449344458043682948300556745380163" SplitViewSize_1_1="0.4684147794994040769900323084584670141339" SplitViewSize_2_0="0.7131400370141888211961145316308829933405" SplitViewSize_2_1="0.2837754472547809880822455852467101067305" TabSwitchValue="6" Version="1" name="UIEditController"/>
+		<attributes name="UIAttributesController"/>
+		<attributes SelectedRow="15" name="UIViewCreatorDataSource"/>
+		<attributes SelectedRow="6" name="UIBitmapsDataSource"/>
+		<attributes SelectedRow="8" name="UITagsDataSource"/>
+		<attributes SelectedRow="0" name="UIFontsDataSource"/>
+		<attributes SelectedRow="2" name="UIColorsDataSource"/>
+		<attributes SelectedRow="-1" name="UIGradientsDataSource"/>
+	</custom>
+	<bitmaps>
+		<bitmap name="BG" path="BG.png"/>
+		<bitmap name="BG_Ref" path="C:\Users\Benjamin\VST_SDK_3_7_0\my_plugins\delaydoppler\resource\BG_Ref.png"/>
+		<bitmap name="Btn_Add" path="Btn_Add.png"/>
+		<bitmap name="Btn_Remove" path="Btn_Remove.png"/>
+		<bitmap name="Emitter" path="Emitter.png"/>
+		<bitmap name="Knob_135_271" path="Knob_135_271.png"/>
+		<bitmap name="Knob_Extra_135" path="Knob_Extra_135.png"/>
+		<bitmap name="OnOff" path="OnOff.png"/>
+		<bitmap name="Slider_BG" path="Slider_BG.png"/>
+		<bitmap name="Slider_Handle" path="Slider_Handle.png"/>
+	</bitmaps>
+	<control-tags>
+		<control-tag name="AddPoint" tag="500"/>
+		<control-tag name="AttenMix" tag="303"/>
+		<control-tag name="AutoStart" tag="306"/>
+		<control-tag name="Bypass" tag="100"/>
+		<control-tag name="Dist" tag="300"/>
+		<control-tag name="Duration" tag="301"/>
+		<control-tag name="Gain" tag="304"/>
+		<control-tag name="Loop" tag="307"/>
+		<control-tag name="PathEdit" tag="666"/>
+		<control-tag name="Progress" tag="400"/>
+		<control-tag name="RemovePoint" tag="501"/>
+		<control-tag name="SpeedOfSound" tag="302"/>
+		<control-tag name="Threshold" tag="305"/>
+	</control-tags>
+	<gradients>
+		<gradient name="Default TextButton Gradient">
+			<color-stop rgba="#dcdcdcff" start="0"/>
+			<color-stop rgba="#b4b4b4ff" start="1"/>
+		</gradient>
+		<gradient name="Default TextButton Gradient Highlighted">
+			<color-stop rgba="#b4b4b4ff" start="0"/>
+			<color-stop rgba="#646464ff" start="1"/>
+		</gradient>
+	</gradients>
+</vstgui-ui-description>
